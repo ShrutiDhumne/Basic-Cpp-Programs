@@ -1,0 +1,44 @@
+#include<conio.h>
+#include<iostream.h>
+
+class books
+{
+	char tit1e [30];
+	float price ;
+
+	public:
+		void getdata ();
+		void putdata ();
+} ;
+
+void books :: getdata ()
+{
+	cout<<"Title:”;
+	cin>>title;
+	cout<<"Price:”;
+	cin>>price;
+}
+
+void books :: putdata ()
+{
+	cout<<"Title:"<<title<< "\n";
+	cout<<"Price:"<<price<< "\n”;
+	const int size=3 ;
+}
+
+int main ()
+{
+	int size = 5;
+	books book[size] ;
+	for(int i=0;i<size;i++)
+	{
+		cout<<"Enter details o£ book "<<(i+1)<<"\n";
+		book[i].getdata();
+	}
+	for(int i=0;i<size;i++)
+	{
+		cout<<"\nBook "<<(i+l)<<"\n";
+		book[i].putdata() ;
+	}
+	getch();
+}

@@ -1,0 +1,38 @@
+#include<conio.>
+#include<iostream.h>
+class Data
+{
+	protected :
+		int a,b;
+	public :
+		void read()
+		{
+			cout<<"Enter two numbers : ";
+			cin>>a>>b;
+		}
+								
+};
+class sum : public data
+{
+	private : 
+		int sum;
+	public :
+		void add()
+		{
+			sum = a+b;
+		}
+		void display()
+		{
+			cout<<"\n The sum is : "<<sum;
+		}
+};
+void main()
+{
+	clrscr();
+	sum s;
+	s.read();
+	s.add();
+	s.display();
+	getch();
+}
+ 
